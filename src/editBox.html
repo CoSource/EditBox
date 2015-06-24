@@ -1,0 +1,8 @@
+<div contenteditable='{{editable}}'>
+    <p ng-transclude></p>
+</div>
+<button ng-click='editable = !editable;'
+        ng-switch='editable'>
+            <span ng-switch-when='false'>Edit</span>
+            <span ng-switch-when='true'>Save</span>
+</button>
